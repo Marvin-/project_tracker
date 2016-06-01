@@ -7,7 +7,7 @@ class Task < ActiveRecord::Base
   end
 
   def complete?
-    @completed_at.present?
+    completed_at.present?
   end
 
   def part_of_velocity?
