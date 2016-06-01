@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem "haml-rails", "~> 0.9"
 
 
 gem 'rails', '4.2.6'
