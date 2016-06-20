@@ -1,0 +1,11 @@
+%h1
+  %table
+    %thead
+      %tr
+        %td Project Name
+        %td Total Project Size
+    %tbody
+      - @projects.each do |project|
+        %tr
+          %td= project.name
+          %td= project.total_size
