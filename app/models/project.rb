@@ -1,6 +1,7 @@
 class Project < ActiveRecord::Base
 
   has_many :tasks
+  validates :name, presence: true
 
   def incomplete_tasks
     tasks.reject(&:complete?)
